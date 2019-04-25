@@ -7,15 +7,21 @@ html {
   box-sizing: inherit;
 }
 
+body{
+  background-color: tomato;
+}
+
 .container {
   display: flex;
   max-width: 960px;
   background-color: #eaeaea;
   margin: 20px auto;
+  justify-content: space-between;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
 }
 
 .profile {
-  max-width: 350px;
+  flex-basis: 35%;
   background-color: #39383a;
   color: #ababab;
 }
@@ -125,4 +131,91 @@ html {
 .line:nth-child(2){
     width: 100px;
     margin-left: 20px;
+}
+
+.resume{
+  flex-basis: 60%;
+  padding: 25px 30px;
+}
+
+.resume-wrap{
+  padding: 36px 56px;
+  min-height: 100%;
+  border: 1px solid rgba(168, 168, 168, 0.44)
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+}
+
+.logo-img{
+  width: 90px;
+  height: 90px;
+  border: 1px solid #39383a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-lines{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 17px;
+  margin-right: 17px;
+}
+
+.logo-line{
+  width: 43px;
+  height: 2px;
+  background-color: #39383a;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.logo-lines__left .logo-line:nth-child(2){
+  margin-right: 20px;
+}
+
+.logo-lines__right .logo-line:nth-child(2){
+  margin-left: 20px;
+}
+
+.about{
+  margin-top: 30px;
+  text-align: center;
+  border-bottom: #e0e0e0 1px solid;
+}
+
+.name{
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 11px;
+  margin-bottom: 10px;
+}
+
+.position{
+  display: inline-block;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #808080;
+  margin-bottom: 30px;
+}
+
+.about-address{
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.about-contacts {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.about-contacts__line{
+  text-decoration: none;
+  color: #7777;
 }
